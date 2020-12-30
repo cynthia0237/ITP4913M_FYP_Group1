@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1472634388493261336}
   - component: {fileID: 1472634388493261343}
   - component: {fileID: 1472634388493261333}
+  - component: {fileID: -288954553243009180}
   m_Layer: 0
   m_Name: DemoCamera
   m_TagString: MainCamera
@@ -107,6 +108,9 @@ MonoBehaviour:
   simForwardInput: 0
   _requireLMBToMove: 0
   _fixedDt: 0.016666668
+  _debug:
+    disableOcclusionMesh: 0
+    occlusionMeshScale: 1
 --- !u!114 &1472634388493261341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +186,9 @@ MonoBehaviour:
   _reflectionLayers:
     serializedVersion: 2
     m_Bits: 1536
+  _disableOcclusionCulling: 1
   _disablePixelLights: 1
+  _disableShadows: 1
   _textureSize: 256
   _clipPlaneOffset: 0.07
   _hdr: 0
@@ -206,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078bc43c1b57add4f8b9853653c31541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _demoEnabled: 1
   _shots:
   - {fileID: 11400000, guid: 1baca6a958c8d4244ba63d09d2e897b4, type: 2}
   - {fileID: 11400000, guid: cf302747c4edb0849bbb836302b4b8cc, type: 2}
@@ -225,7 +232,7 @@ MonoBehaviour:
   _uiParent: {fileID: 0}
   _captionUI: {fileID: 0}
   _fadeToBlackImage: {fileID: 0}
-  _overlay: {fileID: 0}
+  _bottomPanel: {fileID: 0}
 --- !u!111 &1472634388493261333
 Animation:
   m_ObjectHideFlags: 0
@@ -249,6 +256,37 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &-288954553243009180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472634388493261335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1001 &1472634389578795740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -256,6 +294,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1472634388493261328}
     m_Modifications:
+    - target: {fileID: 1040961582426892, guid: 6d79ad5f5edb537448c2c13e54ffac88, type: 3}
+      propertyPath: m_Name
+      value: UnderWaterMeniscus
+      objectReference: {fileID: 0}
     - target: {fileID: 4478995129147352, guid: 6d79ad5f5edb537448c2c13e54ffac88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -299,10 +341,6 @@ PrefabInstance:
     - target: {fileID: 4478995129147352, guid: 6d79ad5f5edb537448c2c13e54ffac88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1040961582426892, guid: 6d79ad5f5edb537448c2c13e54ffac88, type: 3}
-      propertyPath: m_Name
-      value: UnderWaterMeniscus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d79ad5f5edb537448c2c13e54ffac88, type: 3}
