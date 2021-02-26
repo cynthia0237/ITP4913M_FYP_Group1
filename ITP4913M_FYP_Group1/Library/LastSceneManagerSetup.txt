@@ -1,5 +1,6 @@
 sceneSetups:
-- path: Assets/oceanTest.unity
-  isLoaded: 1
-  isActive: 1
+- path: Assets/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Demo
+    Scenes/Lava Demo 1.unity
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
