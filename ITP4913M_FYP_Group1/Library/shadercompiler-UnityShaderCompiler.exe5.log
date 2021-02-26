@@ -1,5 +1,4 @@
 Base path: 'D:/Levi/unity/2019.4.10f1/Editor/Data', plugins path 'D:/Levi/unity/2019.4.10f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=7825 outsize=4105 ok=1
-Cmd: initializeCompiler
+
+Quitting shader compiler process
